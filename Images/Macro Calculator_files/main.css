@@ -27,8 +27,6 @@ body {
   width: 80%;
   height: 675px;
   background-color: #FFFFFF;
-  text-align: center;
-  overflow: hidden;
   /* border radius */
   border-radius: 12px 12px 12px 12px;
   -moz-border-radius: 12px 12px 12px 12px;
@@ -38,7 +36,7 @@ body {
   -webkit-box-shadow: -4px 4px 74px -4px rgba(92, 85, 92, 1);
   -moz-box-shadow: -4px 4px 74px -4px rgba(92, 85, 92, 1);
   box-shadow: -4px 4px 74px -4px rgba(92, 85, 92, 1);
-
+  overflow: hidden;
 }
 
 .results {
@@ -82,16 +80,15 @@ body {
   font-weight: 900;
 }
 
-/* Input personal info(right side) */
 .container .input-info {
   display: inline-block;
   margin: 0;
   padding: 0;
+  background-color: #FFF;
   height: inherit;
   width: 58%;
   float: right;
-  font-family: 'Bangers', cursive, serif;
-  letter-spacing: 2px;
+  font-family: serif;
 }
 
 .container .input-info .input-info-container{
@@ -99,7 +96,7 @@ body {
   flex-direction: column;
   width: 80%;
   height: 600px;
-  background-color: inherit;
+  background-color: red;
   margin: 0 auto;
   position: relative;
   top: 50%;
@@ -108,65 +105,44 @@ body {
 .container .input-info .input-info-container .goals{
   display: flex;
   flex-direction: row;
-  margin: 6% 0 7% 0;
-  width: 100%;
-  text-align: center;
+  margin: 5% 0 5% 0;
 }
 .container .input-info .input-info-container .goals :nth-child(-n+3){
   flex-grow: 1;
-  width: 100%;
   text-align: center;
-  border: 1px solid black;
-  padding: 15px 20px;
-  margin-left: 2.3%;
 }
 .container .input-info .input-info-container .sex{
   display: flex;
   flex-direction: row;
-  width: 100%;
-  text-align: center;
-  margin: 5% 0%;
 }
 .container .input-info .input-info-container .sex :nth-child(-n+2){
-  display: flex;
-  flex-direction: column;
   flex-grow: 1;
-  width: 100%;
-  cursor: pointer;
-
-  border: 1px solid black;
-  padding: 15px 35px;
-  margin-left: 2.3%;
+  text-align: center;
+  margin: 0 0 5% 0;
 }
 .container .input-info .input-info-container .weight{
   display: flex;
   flex-direction: row;
   width: 100%;
   text-align: center;
-  margin: 0 0 5% 0;
 }
 .container .input-info .input-info-container .weight :nth-child(-n+3){
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   overflow: hidden;
-  margin-left: 2.3%;
-  padding: 8px 0 8px 9px;
-  border-radius: 50px;
-  border: 1px solid black;
 }
 .container .input-info .input-info-container h1{
   display: block;
   width: 100%;
   text-align: center;
-  margin: 4% 0 2% 0 ;
+  margin: 8% 0 8% 0 ;
 }
 .container .input-info .input-info-container .active-level{
   display: flex;
   flex-direction: row;
   width: 100%;
   text-align: center;
-  margin: 0 0 4% 0;
 }
 .container .input-info .input-info-container .active-level :nth-child(-n+3){
   display: flex;
@@ -179,7 +155,7 @@ body {
   flex-direction: row;
   width: 100%;
   text-align: center;
-  margin: 0 0 9% 0;
+  margin: 0 0 8% 0;
 }
 .container .input-info .input-info-container .body-type :nth-child(-n+3){
   display: flex;
