@@ -1,21 +1,23 @@
-*{
--moz-box-sizing: border-box;
- -webkit-box-sizing: border-box;
- box-sizing: border-box;
- font-family: serif;
- text-decoration: none;
- list-style: none;
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-body{
-  background: rgb(90,0,216);
-  background: linear-gradient(0deg, rgba(90,0,216,1) 28%, rgba(245,125,51,1) 100%);
+
+body {
+  background: rgb(90, 0, 216);
+  background: linear-gradient(0deg, rgba(90, 0, 216, 1) 28%, rgba(245, 125, 51, 1) 100%);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
-.container{
+
+.container {
   position: absolute;
   margin: auto;
   top: 0;
@@ -31,24 +33,145 @@ body{
   -webkit-border-radius: 12px 12px 12px 12px;
   border: 0px solid #000000;
   /* shadow */
-  -webkit-box-shadow: -4px 4px 74px -4px rgba(92,85,92,1);
--moz-box-shadow: -4px 4px 74px -4px rgba(92,85,92,1);
-box-shadow: -4px 4px 74px -4px rgba(92,85,92,1);
-overflow: hidden;
+  -webkit-box-shadow: -4px 4px 74px -4px rgba(92, 85, 92, 1);
+  -moz-box-shadow: -4px 4px 74px -4px rgba(92, 85, 92, 1);
+  box-shadow: -4px 4px 74px -4px rgba(92, 85, 92, 1);
+  overflow: hidden;
 }
-.container .results{
+
+.results {
   display: inline-block;
-  width: 38%;
+  width: 42%;
+  height: 675px;
   margin: 0;
   padding: 0;
   float: left;
+  background-image: url("Images/image02.jpeg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Bangers', cursive, serif;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  letter-spacing: 4px;
+  color: #fff;
 }
-.container .input-info{
+.container .results .nutrition-info{
+  margin: 0 auto;
+  text-align: center;
+}
+.container .results .nutrition-info .display-calories{
+  margin: 35% 0 20% 0 ;
+}
+.container .results .nutrition-info .display-calories h1{
+  font-size: 6.5rem;
+  margin-bottom: 2.5%;
+  letter-spacing: 5px;
+}
+.container .results .nutrition-info .display-calories h2{
+  font-size: 2.8rem;
+}
+.container .results .nutrition-info .list{
+  display: inline-block;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.container .results .nutrition-info .list span{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.container .input-info {
   display: inline-block;
   margin: 0;
   padding: 0;
-  background-color: #F57D33;
+  background-color: #FFF;
   height: inherit;
-  width: 62%;
+  width: 58%;
   float: right;
+  font-family: serif;
+}
+
+.container .input-info .input-info-container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 600px;
+  background-color: red;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+.container .input-info .input-info-container .goals{
+  display: flex;
+  flex-direction: row;
+  margin: 5% 0 5% 0;
+}
+.container .input-info .input-info-container .goals :nth-child(-n+3){
+  flex-grow: 1;
+  text-align: center;
+}
+.container .input-info .input-info-container .sex{
+  display: flex;
+  flex-direction: row;
+}
+.container .input-info .input-info-container .sex :nth-child(-n+2){
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 0 5% 0;
+}
+.container .input-info .input-info-container .weight{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+}
+.container .input-info .input-info-container .weight :nth-child(-n+3){
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.container .input-info .input-info-container h1{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 8% 0 8% 0 ;
+}
+.container .input-info .input-info-container .active-level{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+}
+.container .input-info .input-info-container .active-level :nth-child(-n+3){
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+.container .input-info .input-info-container .body-type{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 8% 0;
+}
+.container .input-info .input-info-container .body-type :nth-child(-n+3){
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+.container .input-info .input-info-container .submit-or-clear{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+}
+.container .input-info .input-info-container .submit-or-clear :nth-child(-n+2){
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
 }
