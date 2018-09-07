@@ -85,6 +85,12 @@ body {
 }
 
 /* Input personal info(right side) */
+
+/* will change the button style when clicked */
+.selected{
+  background-color: black;
+  color: #fff;
+}
 .container .input-info {
   display: inline-block;
   margin: 0;
@@ -114,7 +120,8 @@ body {
   width: 100%;
   text-align: center;
 }
-.container .input-info .input-info-container .goals :nth-child(-n+3){
+.container .input-info .input-info-container .selectGoals{
+  /* :nth-child(-n+3) */
   flex-grow: 1;
   width: 100%;
   text-align: center;
@@ -122,9 +129,9 @@ body {
   padding: 15px 20px;
   margin-left: 2.3%;
   cursor: pointer;
-
 }
-.container .input-info .input-info-container .goals :nth-child(-n+3):hover{
+.container .input-info .input-info-container .selectGoals:hover{
+  /* :nth-child(-n+3) */
   background-color: black;
   color: #fff;
 }
