@@ -130,8 +130,8 @@ body {
   margin-left: 2.3%;
   cursor: pointer;
 }
+/* changes bckgrd color to blk & font color white */
 .container .input-info .input-info-container .selectGoals:hover{
-  /* :nth-child(-n+3) */
   background-color: black;
   color: #fff;
 }
@@ -141,6 +141,7 @@ body {
   width: 100%;
   text-align: center;
   margin: 5% 0%;
+  cursor: pointer;
 }
 .container .input-info .input-info-container .sex :nth-child(-n+2){
   display: flex;
@@ -152,6 +153,11 @@ body {
   border: 1px solid black;
   padding: 15px 35px;
   margin-left: 2.3%;
+}
+/* changes bckgrd color to blk & font color white */
+.container .input-info .input-info-container .sex h3:hover{
+  background-color: black;
+  color: #fff;
 }
 .container .input-info .input-info-container .weight{
   display: flex;
@@ -193,6 +199,12 @@ body {
   border: 1px solid black;
   padding: 15px 25px;
   margin-left: 2.3%;
+  cursor: pointer;
+}
+/* changes bckgrd color to blk & font color white */
+.container .input-info .input-info-container .active-level h3:hover{
+  background-color: black;
+  color: #fff;
 }
 .container .input-info .input-info-container .body-type{
   display: flex;
@@ -211,6 +223,12 @@ body {
   border: 1px solid black;
   padding: 15px 15px;
   margin-left: 2.3%;
+  cursor: pointer;
+}
+/* changes bckgrd color to blk & font color white */
+.container .input-info .input-info-container .body-type h3:hover{
+  background-color: black;
+  color: #fff;
 }
 .container .input-info .input-info-container .submit-or-clear{
   display: flex;
@@ -229,9 +247,14 @@ body {
   margin-left: 2.3%;
   background-color: black;
   color: white;
-
+  pointer: cursor;
 
   -ms-transform: skewX(20deg);
    -webkit-transform: skewX(20deg);
    transform: skewX(-15deg);
+}
+
+.container .input-info .input-info-container .submit-or-clear h3:hover{
+  background-color: #fff;
+  color: black;
 }
