@@ -87,7 +87,23 @@ body {
 /* Input personal info(right side) */
 
 /* will change the button style when clicked */
-.selected{
+.selectedGoals{
+  background-color: black;
+  color: #fff;
+}
+.selectedSex{
+  background-color: black;
+  color: #fff;
+}
+.selectedActivity{
+  background-color: black;
+  color: #fff;
+}
+.selectedBodyType{
+  background-color: black;
+  color: #fff;
+}
+.selectedSubmitOrClear{
   background-color: black;
   color: #fff;
 }
@@ -242,12 +258,12 @@ body {
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  border: 1px solid black;
+  border: 3px solid black;
   padding: 15px 15px;
   margin-left: 2.3%;
-  background-color: black;
-  color: white;
-  pointer: cursor;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
 
   -ms-transform: skewX(20deg);
    -webkit-transform: skewX(20deg);
@@ -255,6 +271,6 @@ body {
 }
 
 .container .input-info .input-info-container .submit-or-clear h3:hover{
-  background-color: #fff;
-  color: black;
+  background-color: black;
+  color: #fff;
 }
