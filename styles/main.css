@@ -38,7 +38,6 @@ body {
   -webkit-box-shadow: -4px 4px 74px -4px rgba(92, 85, 92, 1);
   -moz-box-shadow: -4px 4px 74px -4px rgba(92, 85, 92, 1);
   box-shadow: -4px 4px 74px -4px rgba(92, 85, 92, 1);
-
 }
 
 .results {
@@ -59,27 +58,33 @@ body {
   overflow-y: scroll;
   overflow-x: scroll;
 }
-.container .results .nutrition-info{
+
+.container .results .nutrition-info {
   margin: 0 auto;
   text-align: center;
 }
-.container .results .nutrition-info .display-calories{
-  margin: 35% 0 20% 0 ;
+
+.container .results .nutrition-info .display-calories {
+  margin: 35% 0 20% 0;
 }
-.container .results .nutrition-info .display-calories h1{
+
+.container .results .nutrition-info .display-calories h1 {
   font-size: 6.5rem;
   margin-bottom: 2.5%;
   letter-spacing: 5px;
 }
-.container .results .nutrition-info .display-calories h2{
+
+.container .results .nutrition-info .display-calories h2 {
   font-size: 2.8rem;
 }
-.container .results .nutrition-info .list{
+
+.container .results .nutrition-info .list {
   display: inline-block;
   margin-right: 5%;
   margin-bottom: 5%;
 }
-.container .results .nutrition-info .list span{
+
+.container .results .nutrition-info .list span {
   font-size: 1.5rem;
   font-weight: 900;
 }
@@ -87,26 +92,32 @@ body {
 /* Input personal info(right side) */
 
 /* will change the button style when clicked */
-.selectedGoals{
+
+.selectedGoals {
   background-color: black;
   color: #fff;
 }
-.selectedSex{
+
+.selectedSex {
   background-color: black;
   color: #fff;
 }
-.selectedActivity{
+
+.selectedActivity {
   background-color: black;
   color: #fff;
 }
-.selectedBodyType{
+
+.selectedBodyType {
   background-color: black;
   color: #fff;
 }
-.selectedSubmitOrClear{
+
+.selectedSubmitOrClear {
   background-color: black;
   color: #fff;
 }
+
 .container .input-info {
   display: inline-block;
   margin: 0;
@@ -118,7 +129,7 @@ body {
   letter-spacing: 2px;
 }
 
-.container .input-info .input-info-container{
+.container .input-info .input-info-container {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -129,14 +140,16 @@ body {
   top: 50%;
   transform: perspective(1px) translateY(-50%);
 }
-.container .input-info .input-info-container .goals{
+
+.container .input-info .input-info-container .goals {
   display: flex;
   flex-direction: row;
   /* margin-bottom: 7%; */
   width: 100%;
   text-align: center;
 }
-.container .input-info .input-info-container .selectGoals{
+
+.container .input-info .input-info-container .selectGoals {
   /* :nth-child(-n+3) */
   flex-grow: 1;
   width: 100%;
@@ -146,12 +159,15 @@ body {
   margin-left: 2.3%;
   cursor: pointer;
 }
+
 /* changes bckgrd color to blk & font color white */
-.container .input-info .input-info-container .selectGoals:hover{
+
+.container .input-info .input-info-container .selectGoals:hover {
   background-color: black;
   color: #fff;
 }
-.container .input-info .input-info-container .sex{
+
+.container .input-info .input-info-container .sex {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -159,30 +175,34 @@ body {
   margin: 5% 0%;
   cursor: pointer;
 }
-.container .input-info .input-info-container .sex :nth-child(-n+2){
+
+.container .input-info .input-info-container .sex :nth-child(-n+2) {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
   cursor: pointer;
-
   border: 1px solid black;
   padding: 15px 35px;
   margin-left: 2.3%;
 }
+
 /* changes bckgrd color to blk & font color white */
-.container .input-info .input-info-container .sex h3:hover{
+
+.container .input-info .input-info-container .sex h3:hover {
   background-color: black;
   color: #fff;
 }
-.container .input-info .input-info-container .weight{
+
+.container .input-info .input-info-container .weight {
   display: flex;
   flex-direction: row;
   width: 100%;
   text-align: center;
   margin: 0 0 5% 0;
 }
-.container .input-info .input-info-container .weight :nth-child(-n+3){
+
+.container .input-info .input-info-container .weight :nth-child(-n+3) {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -192,13 +212,15 @@ body {
   border-radius: 50px;
   border: 1px solid black;
 }
-.container .input-info .input-info-container h1{
+
+.container .input-info .input-info-container h1 {
   display: block;
   width: 100%;
   text-align: center;
-  margin: 7% 0 0 0 ;
+  margin: 7% 0 0 0;
 }
-.container .input-info .input-info-container .active-level{
+
+.container .input-info .input-info-container .active-level {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -206,54 +228,61 @@ body {
   margin: 5% 0%;
   /* overflow: hidden; */
 }
-.container .input-info .input-info-container .active-level :nth-child(-n+3){
+
+.container .input-info .input-info-container .active-level :nth-child(-n+3) {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-
   border: 1px solid black;
   padding: 15px 25px;
   margin-left: 2.3%;
   cursor: pointer;
 }
+
 /* changes bckgrd color to blk & font color white */
-.container .input-info .input-info-container .active-level h3:hover{
+
+.container .input-info .input-info-container .active-level h3:hover {
   background-color: black;
   color: #fff;
 }
-.container .input-info .input-info-container .body-type{
+
+.container .input-info .input-info-container .body-type {
   display: flex;
   flex-direction: row;
   width: 100%;
   text-align: center;
   margin: 5% 0%;
 }
-.container .input-info .input-info-container .body-type :nth-child(-n+3){
+
+.container .input-info .input-info-container .body-type :nth-child(-n+3) {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
   font-size: .8rem;
-
   border: 1px solid black;
   padding: 15px 15px;
   margin-left: 2.3%;
   cursor: pointer;
 }
+
 /* changes bckgrd color to blk & font color white */
-.container .input-info .input-info-container .body-type h3:hover{
+
+.container .input-info .input-info-container .body-type h3:hover {
   background-color: black;
   color: #fff;
 }
-.container .input-info .input-info-container .submit-or-clear{
+
+.container .input-info .input-info-container .submit-or-clear {
   display: flex;
   flex-direction: row;
   width: 100%;
   text-align: center;
   margin-top: 5%;
 }
-.container .input-info .input-info-container .submit-or-clear :nth-child(-n+2){
+
+.container .input-info .input-info-container .submit-or-clear :nth-child(-n+2) {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -264,13 +293,12 @@ body {
   background-color: #fff;
   color: black;
   cursor: pointer;
-
   -ms-transform: skewX(20deg);
-   -webkit-transform: skewX(20deg);
-   transform: skewX(-15deg);
+  -webkit-transform: skewX(20deg);
+  transform: skewX(-15deg);
 }
 
-.container .input-info .input-info-container .submit-or-clear h3:hover{
+.container .input-info .input-info-container .submit-or-clear h3:hover {
   background-color: black;
   color: #fff;
 }
