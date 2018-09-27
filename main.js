@@ -64,7 +64,7 @@ var carbs;
 var fat;
 
 var calculateButton = document.querySelector('.calculate');
-calculateButton.addEventListener('click', getMacros)
+calculateButton.addEventListener('click', getMacros);
 
 function getMacros() {
 
@@ -135,7 +135,7 @@ function getMacros() {
     fats = Math.floor((calories * .30) / 9);
   } else {
     alert('Please select your body type')
-  };
+  }
 
   //Get and display Macronutrient values
   var totalCalories = document.getElementById('totalCalories');
@@ -153,3 +153,38 @@ function getMacros() {
 document.getElementById('clearOrSubmit1').addEventListener('click', function() {
   window.location.reload(true);
 })
+
+// update weight goal text on left hand side
+
+calculateButton.addEventListener('click', function (e) {
+  var loose = document.getElementById('goals1');
+  var maintain = document.getElementById('goals2');
+  var gain = document.getElementById('goals3');
+  var span  = document.getElementById('weightGoal');
+
+  if (loose.classList.contains('selectedGoals')) {
+    span.innerText = 'loose';
+  }
+  else if (maintain.classList.contains('selectedGoals')) {
+    span.innerText = 'maintain';
+  }
+  else if (gain.classList.contains('selectedGoals')) {
+    span.innerText = 'gain';
+  }
+  // console.log(weightGoalText[1].innerText);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+//
