@@ -306,10 +306,12 @@ body {
 
 /* media queries */
 @media (max-width: 680px) {
-.contianer{
+.container{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
+  position: static;
+  height: auto;
 }
 .container .input-info{
   display: flex;
