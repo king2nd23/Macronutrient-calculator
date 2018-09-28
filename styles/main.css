@@ -321,12 +321,18 @@ body {
   height: 700px;
   /* float: none; */
 }
+.container .input-info .input-info-container{
+  width: 90%;
+}
 .container .results{
   display: flex;
   width: 100%;
   flex-direction: column;
   order: 2;
   height: 780px;
+
+  position: relative;
+    top: 50%;
 }
 
 
