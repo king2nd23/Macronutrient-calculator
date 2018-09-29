@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="description" content="Calculate Your Macros Based On Your Fitness Goals, Body Type and Activity Level">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="" href="/css/master.css">
@@ -40,14 +41,14 @@
     <div class="input-info">
       <div class="input-info-container">
         <div class="goals">
-          <h2 class="selectGoals" id="goals1" data-value="1">Loose</h2>
-          <h2 class="selectGoals" id="goals2" data-value="2">Maintain</h2>
-          <h2 class="selectGoals" id="goals3" data-value="3">Gain</h2>
+          <h2 class="selectGoals shadow" id="goals1" data-value="1">Loose</h2>
+          <h2 class="selectGoals shadow" id="goals2" data-value="2">Maintain</h2>
+          <h2 class="selectGoals shadow" id="goals3" data-value="3">Gain</h2>
         </div>
         <h1>Body Parameters</h1>
         <div class="sex">
-          <h3 id="sex1">Male</h3>
-          <h3 id="sex2">Female</h3>
+          <h3 class="shadow" id="sex1">Male</h3>
+          <h3 class="shadow" id="sex2">Female</h3>
         </div>
         <div class="weight">
           <input type="text" name="Name" value="" placeholder="Height (in.)" id="inputHeight">
@@ -58,20 +59,20 @@
           <h1>Activity Level</h1>
         </div>
         <div class="active-level">
-          <h3 class="light" id="activeLevel1">Light</h3>
-          <h3 class="moderate" id="activeLevel2">Moderate</h3>
-          <h3 class="very-active" id="activeLevel3">Very</h3>
+          <h3 class="light shadow" id="activeLevel1">Light</h3>
+          <h3 class="moderate shadow" id="activeLevel2">Moderate</h3>
+          <h3 class="very-active shadow" id="activeLevel3">Very Active</h3>
         </div>
         <div class="body-type-header">
           <h1>Body Type</h1>
         </div>
         <div class="body-type">
-          <h3 class="ectomorph" id="bodyType1">Ectomorphs </h3>
-          <h3 class="mesomorph" id="bodyType2">Mesomorph</h3>
-          <h3 class="endomorph" id="bodyType3">Endomorph</h3>
+          <h3 class="ectomorph shadow" id="bodyType1">Ectomorphs </h3>
+          <h3 class="mesomorph shadow" id="bodyType2">Mesomorph</h3>
+          <h3 class="endomorph shadow" id="bodyType3">Endomorph</h3>
         </div>
         <div class="submit-or-clear">
-          <h3 class="calculate" id="clearOrSubmit2">Calculate</h3>
+          <h3 class="calculate" id="clearOrSubmit2" onclick="window.location = '.results';">Calculate</h3>
           <h3 class="clear" id="clearOrSubmit1">Clear</h3>
         </div>
       </div>
