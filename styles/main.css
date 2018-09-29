@@ -72,6 +72,7 @@ body {
   font-size: 6.5rem;
   margin-bottom: 2.5%;
   letter-spacing: 5px;
+  /* background-color: #F57D33; */
 }
 
 .container .results .nutrition-info .display-calories h2 {
@@ -82,6 +83,9 @@ body {
   display: inline-block;
   margin-right: 5%;
   margin-bottom: 5%;
+
+/* background-color: #F57D33; */
+  /* border: 1px solid #F57D33; */
 }
 
 .container .results .nutrition-info .list span {
@@ -326,7 +330,7 @@ body {
   width: 100%;
   flex-direction: column;
   order: 1;
-  height: 700px;
+  height: 750px;
   /* float: none; */
 }
 .container .input-info .input-info-container{
@@ -338,9 +342,8 @@ body {
   flex-direction: column;
   order: 2;
   height: 780px;
-
   position: relative;
-    top: 50%;
+  top: 50%;
 }
 .container .input-info .input-info-container .active-level :nth-child(3){
   padding: 7px 25px 15px 25px;
