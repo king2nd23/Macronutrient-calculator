@@ -143,10 +143,13 @@ function getMacros() {
   var totalFat = document.getElementById('fats');
   var totalCarbs = document.getElementById('carbs');
 
-  totalCalories.innerText = Math.floor(calories);
-  totalProtein.innerText = protein;
-  totalFat.innerText = fats;
-  totalCarbs.innerText = carbs;
+  totalCalories.innerText = Math.floor(calories) || 0;
+  totalProtein.innerText = protein || 0;
+  totalFat.innerText = fats || 0;
+  totalCarbs.innerText = carbs || 0;
+
+  //jump to display results section
+
 }
 
 //reload page with clear button
@@ -155,7 +158,6 @@ document.getElementById('clearOrSubmit1').addEventListener('click', function() {
 })
 
 // update weight goal text on left hand side
-
 calculateButton.addEventListener('click', function (e) {
   var loose = document.getElementById('goals1');
   var maintain = document.getElementById('goals2');
@@ -171,10 +173,6 @@ calculateButton.addEventListener('click', function (e) {
   else if (gain.classList.contains('selectedGoals')) {
     span.innerText = 'gain';
   }
-  // console.log(weightGoalText[1].innerText);
-
-
-
 });
 
 

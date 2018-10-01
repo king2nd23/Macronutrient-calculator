@@ -171,11 +171,10 @@ body {
   margin-left: 2.3%;
   cursor: pointer;
 }
-}
+
 
 /* changes bckgrd color to blk & font color white */
-
-.container .input-info .input-info-container .selectGoals:hover {
+.container .input-info .input-info-container .goals h2:hover {
   background-color: black;
   color: #fff;
 }
@@ -281,7 +280,6 @@ body {
 }
 
 /* changes bckgrd color to blk & font color white */
-
 .container .input-info .input-info-container .body-type h3:hover {
   background-color: black;
   color: #fff;
