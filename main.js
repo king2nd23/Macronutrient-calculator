@@ -158,24 +158,20 @@ document.getElementById('clearOrSubmit1').addEventListener('click', function() {
 })
 
 // update weight goal text on left hand side
-calculateButton.addEventListener('click', function (e) {
+calculateButton.addEventListener('click', function(e) {
   var loose = document.getElementById('goals1');
   var maintain = document.getElementById('goals2');
   var gain = document.getElementById('goals3');
-  var span  = document.getElementById('weightGoal');
+  var span = document.getElementById('weightGoal');
 
   if (loose.classList.contains('selectedGoals')) {
     span.innerText = 'loose';
-  }
-  else if (maintain.classList.contains('selectedGoals')) {
+  } else if (maintain.classList.contains('selectedGoals')) {
     span.innerText = 'maintain';
-  }
-  else if (gain.classList.contains('selectedGoals')) {
+  } else if (gain.classList.contains('selectedGoals')) {
     span.innerText = 'gain';
   }
 });
-
-
 
 
 
