@@ -1,3 +1,7 @@
+//refactoring to ES6 and cleaning up JSON
+//  
+
+
 //select fitness goal
 document.addEventListener('click', function(e) {
   e = e || window.event; //the "e" references the event object, "window.event is for cross browser capatibility(IE)"
