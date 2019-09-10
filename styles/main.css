@@ -82,8 +82,11 @@ body {
 /* Input personal info(right side) */
 
 /* will change the button style when clicked */
-
-.selectedGoals {
+.selected{
+  background-color: black;
+  color: #fff;
+}
+/* .selectedGoals {
   background-color: black;
   color: #fff;
 }
@@ -106,7 +109,7 @@ body {
 .selectedSubmitOrClear {
   background-color: black;
   color: #fff;
-}
+} */
 
 /* box shadow */
 
@@ -147,7 +150,7 @@ body {
   text-align: center;
 }
 
-.container .input-info .input-info-container .selectGoals {
+.selectGoals {
   flex-grow: 1;
   width: 100%;
   height: 55px;

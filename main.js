@@ -1,22 +1,43 @@
-//refactoring to ES6 and cleaning up JSON
-//  
+//refactoring to ES6 and cleaning up JS
+// 1) Need to create a function that highlights buttons when clicked ex. highlightButton()
+//  -each button should have a click event that runs the highlightButton function
+//
 
+
+let goals = document.querySelectorAll('.selectGoals');//converts the ul list into an nodelist
+
+let goalsArray = Array.from(goals);//converts the nodelist into an actual array
+
+//highlightButton function
+goalsArray.forEach((item, i) => {
+  item.addEventListener('click', (e) => {
+    e = e || window.event; //the "e" references the event object, "window.event is for cross browser capatibility(IE)"
+    let target = e.target;
+
+    if (target.classList.contains('selected')) {
+      target.classList.remove('selected');
+    }
+    else {
+      target.classList.add('selected');
+    }
+    })
+  });
 
 //select fitness goal
-document.addEventListener('click', function(e) {
-  e = e || window.event; //the "e" references the event object, "window.event is for cross browser capatibility(IE)"
-  var target = e.target || e.srcElement; //target gets the element n which the event occured srcElement is a IE non-standard way to obtain the target
-  text = target.textContent; //textContent is literally the text content inside of the element
-
-  if (target.id.substr(0, 5) == "goals") {
-    //remove all class selected
-    var selecteds = document.getElementsByClassName('selectedGoals');
-    while (selecteds.length)
-      selecteds[0].classList.remove('selectedGoals');
-    //add class to the target
-    target.classList.add('selectedGoals');
-  };
-});
+// document.addEventListener('click', function(e) {
+//   e = e || window.event; //the "e" references the event object, "window.event is for cross browser capatibility(IE)"
+//   var target = e.target || e.srcElement; //target gets the element n which the event occured srcElement is a IE non-standard way to obtain the target
+//   text = target.textContent; //textContent is literally the text content inside of the element
+//
+//   if (target.id.substr(0, 5) == "goals") {
+//     //remove all class selected
+//     var selecteds = document.getElementsByClassName('selectedGoals');
+//     while (selecteds.length)
+//       selecteds[0].classList.remove('selectedGoals');
+//     //add class to the target
+//     target.classList.add('selectedGoals');
+//   };
+// });
 
 //select sex
 document.addEventListener('click', function(e) {
